@@ -1,6 +1,6 @@
 # Alfred Workflow - Browse Finder Volumes
 
-Very simple workflow to browse mounted Finder volumes.
+Simple workflow to browse mounted Finder volumes. It currently assumes all volumes are mounted under /Volumes.
 
 ## Usage
 
