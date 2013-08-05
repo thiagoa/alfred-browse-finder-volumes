@@ -72,7 +72,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>VOLUME=`basename {query}`
+				<string>VOLUME=`basename "{query}"`
 /usr/bin/osascript -e "tell application \"Finder\" to eject \"$VOLUME\""
 if [ $? -eq 0 ]; then
 	echo "Volume $VOLUME successfully ejected"

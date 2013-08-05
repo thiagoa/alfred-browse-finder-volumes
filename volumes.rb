@@ -10,7 +10,7 @@ Dir.foreach('/Volumes') do |f|
     :subtitle => "Open volume",
     :arg      => path,
     :icon     => { :type => "fileicon", :name => path }
-  ) if f.downcase =~ /#{query}/ && f != '.' && f != '..'
+  ) if f.downcase =~ /#{query}/ && f != '.' && f != '..' && File.directory?(path)
 end
 
 puts feedback.to_xml
